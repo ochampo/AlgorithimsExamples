@@ -19,6 +19,11 @@ namespace SringAlgorithms
             
                 return s.All(char.IsLower);
         }
+
+        public Boolean IsComplex(string s )
+        {
+            return s.Any(char.IsLower) && s.Any(char.IsUpper) && s.Any(char.IsDigit);
+        }
                 
 
 

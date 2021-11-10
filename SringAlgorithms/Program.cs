@@ -4,6 +4,7 @@
 using SringAlgorithms;
 
 ValidateStrings validate = new ValidateStrings();
+NormalizeStrings normalize = new NormalizeStrings();
 
 //Console.WriteLine(validate.IsUppercase("hello"));
 //Console.WriteLine(validate.IsUppercase("HELLO"));
@@ -13,3 +14,4 @@ ValidateStrings validate = new ValidateStrings();
 //Console.WriteLine(validate.IsComplex("HELLO12"));
 //Console.WriteLine(validate.IsComplex("hELL0sda"));
 
+Console.WriteLine( normalize.NormalizeStr("Hello there Buddy,     "));

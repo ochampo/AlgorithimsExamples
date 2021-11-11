@@ -50,7 +50,16 @@ namespace SringAlgorithms
         }
 
 
+        public string ReverseString(string input)
+        {
+            if (String.IsNullOrEmpty(input))
+            {
+                return input;
+            }
 
+            StringBuilder stringBuilder = new StringBuilder(input.Length);
+
+        }
 
     }
 }

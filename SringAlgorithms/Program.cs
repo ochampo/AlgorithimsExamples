@@ -22,4 +22,5 @@ ReverseEachWordInASentence sentence = new ReverseEachWordInASentence();
 //Console.WriteLine(parse.ReverseString("danTest"));
 
 //Console.WriteLine(parse.ReverseStringWithArray("Howdy"));
-sentence.ReversalSentence("The red fox jumped over the fence or something like that");
+sentence.ReversalSentence("The red fox jumped over the fence or something like that \n");
+Console.WriteLine(sentence.ReverseEachWord("The red fox jumped over the fence or something like that"));

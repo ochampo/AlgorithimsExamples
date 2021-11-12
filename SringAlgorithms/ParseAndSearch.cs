@@ -57,9 +57,30 @@ namespace SringAlgorithms
                 return input;
             }
 
-            StringBuilder stringBuilder = new StringBuilder(input.Length);
+            StringBuilder reversedStr = new StringBuilder(input.Length);
+
+            for (int i = input.Length-1; i >= 0; i--)
+            {
+                reversedStr.Append(input[i]);
+            }
+
+            return reversedStr.ToString();
 
         }
+
+        public string ReverseStringWithArray(string input)
+        {
+            if (String.IsNullOrEmpty(input))
+            {
+                return input;
+            }
+
+            char[] chars = input.ToCharArray();
+            Array.Reverse(chars);
+            return new string(chars);
+
+        }
+
 
     }
 }

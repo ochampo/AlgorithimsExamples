@@ -6,6 +6,7 @@ using SringAlgorithms;
 ValidateStrings validate = new ValidateStrings();
 NormalizeStrings normalize = new NormalizeStrings();
 ParseAndSearch parse = new ParseAndSearch();
+ReverseEachWordInASentence sentence = new ReverseEachWordInASentence();
 //Console.WriteLine(validate.IsUppercase("hello"));
 //Console.WriteLine(validate.IsUppercase("HELLO"));
 //Console.WriteLine(validate.IsLowercase("hello"));
@@ -16,4 +17,9 @@ ParseAndSearch parse = new ParseAndSearch();
 
 //Console.WriteLine( normalize.NormalizeStr("Hello there Buddy,     "));
 
-parse.searchAlgorithm("Hello");
+//parse.searchAlgorithm("Hello");
+
+//Console.WriteLine(parse.ReverseString("danTest"));
+
+//Console.WriteLine(parse.ReverseStringWithArray("Howdy"));
+sentence.ReversalSentence("The red fox jumped over the fence or something like that");

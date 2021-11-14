@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithimsExamples", "AlgorithimsExamples\AlgorithimsExamples.csproj", "{2CF2623B-692A-474E-8E0A-A3FA91806102}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgorithimsExamples", "AlgorithimsExamples\AlgorithimsExamples.csproj", "{2CF2623B-692A-474E-8E0A-A3FA91806102}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SringAlgorithms", "SringAlgorithms\SringAlgorithms.csproj", "{47AC855D-86B0-40F9-88FA-A37A76E92FA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SringAlgorithms", "SringAlgorithms\SringAlgorithms.csproj", "{47AC855D-86B0-40F9-88FA-A37A76E92FA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayAlgorithms", "ArrayAlgorithms\ArrayAlgorithms.csproj", "{2E274C74-3C14-47C9-903F-BF6034E0EDD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{47AC855D-86B0-40F9-88FA-A37A76E92FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47AC855D-86B0-40F9-88FA-A37A76E92FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47AC855D-86B0-40F9-88FA-A37A76E92FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E274C74-3C14-47C9-903F-BF6034E0EDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E274C74-3C14-47C9-903F-BF6034E0EDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E274C74-3C14-47C9-903F-BF6034E0EDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E274C74-3C14-47C9-903F-BF6034E0EDD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

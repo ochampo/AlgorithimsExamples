@@ -9,11 +9,29 @@ namespace ArrayAlgorithms
 {
     public class aggregatingArrays
     {
+        public int[] FindEvenNumbers(int[] arr1, int[] arr2)
+        {
+            ArrayList result = new ArrayList();
+            foreach (int num in arr1)
+            {
+                if(num % 2 == 0)
+                {
+                    result.Add(num);
+                }
+            }
+            foreach (int num in arr2)
+            {
+                if (num % 2 == 0)
+                {
+                    result.Add(num);
+                }
+            }
 
-        ArrayList result = new ArrayList();
-    
-    
-    
-    
+            return (int[])result.ToArray(typeof(int));
+
+        }
     }
+
+
 }
+

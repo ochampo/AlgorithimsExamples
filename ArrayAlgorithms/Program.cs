@@ -14,7 +14,7 @@ int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
 //Array.ForEach(items2,Console.WriteLine);
 
 BinerySearchExample binerySearch  = new BinerySearchExample();
-Console.WriteLine(binerySearch.BinarySearch(arr,4));
-Console.WriteLine(Array.BinarySearch(arr,5));
+Console.WriteLine(binerySearch.BinarySearch(arr,25));
+Console.WriteLine(Array.BinarySearch(arr,25));
 
 

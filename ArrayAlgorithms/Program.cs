@@ -16,15 +16,13 @@ int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
 //BinerySearchExample binerySearch  = new BinerySearchExample();
 //Console.WriteLine(binerySearch.BinarySearch(arr,25));
 //Console.WriteLine(Array.BinarySearch(arr,25));
-aggregatingArrays aggregatingArrays = new aggregatingArrays();
+//aggregatingArrays aggregatingArrays = new aggregatingArrays();
+//int[] arr1 = { 1, 2, 3, 4, 5, 6, };
+//int[] arr2 = { 11, 152, 453, 444, 455, 415, 8226, 744, 822, 9888, 1000 };
+//int[] evenArr = aggregatingArrays.FindEvenNumbers(arr1, arr2);
+//Array.ForEach(evenArr,Console.WriteLine);
 
+ReverseArray reverseArray = new ReverseArray();
 
-int[] arr1 = { 1, 2, 3, 4, 5, 6, };
-int[] arr2 = { 11, 152, 453, 444, 455, 415, 8226, 744, 822, 9888, 1000 };
-
-
-int[] evenArr = aggregatingArrays.FindEvenNumbers(arr1, arr2);
-
-
-Array.ForEach(evenArr,Console.WriteLine);
-
+int []  rev = reverseArray.Reverse(arr);
+Array.ForEach(rev, Console.WriteLine);

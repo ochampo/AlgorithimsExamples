@@ -17,8 +17,7 @@ namespace ArrayAlgorithms
                 reversed[i] = input[input.Length - i - 1];
 
             }
-            
-
+                       
         }
 
 

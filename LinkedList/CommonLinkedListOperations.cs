@@ -12,7 +12,16 @@ namespace LinkedList
         {
             LinkedList<string> list = new LinkedList<string>();
 
-            list.AddLast("howdy");
+            list.AddLast("Daniel");
+            list.AddLast("peter");
+            list.AddLast("Laura");
+            list.AddLast("martha");
+            list.AddLast("Frank");
+            list.AddLast("Floss");
+
+            Console.WriteLine(list.Contains("polly"));
+            Console.WriteLine(list.Count);
+            list.RemoveFirst();
 
 
         }

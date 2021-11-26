@@ -19,3 +19,5 @@ list.displayContents();
 list.deleteBackHalf();
 Console.WriteLine();
 list.displayContents();
+Console.WriteLine();
+Console.WriteLine(list.kThNodeDisplay()); 

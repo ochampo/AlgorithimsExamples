@@ -54,6 +54,20 @@ namespace LinkedList
 
         }
 
+        public int kThNodeDisplay()
+        {
+            Node current = head;
+            int count = 0;
+            while (current != null)
+            {
+                Console.Write(current.data + "->");
+                current = current.next;
+                count++;
+            }
+
+
+            return count;
+        }
 
     }
 }

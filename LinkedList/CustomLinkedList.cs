@@ -50,7 +50,25 @@ namespace LinkedList
             
         }
 
-       
+        public void deleteBackHalf()
+        {
+            if (head == null || head.next == null)
+            {
+                head = null;
+            }
+            Node slow = head;
+            Node fast = head;
+            Node prev = null;
+
+            while (fast != null && slow.next != null)
+            {
+                prev = slow;
+                slow = slow.next;
+                fast = fast.next.next;
+
+            }
+            prev.next = null;
+        }
 
 
         public void displayContents()

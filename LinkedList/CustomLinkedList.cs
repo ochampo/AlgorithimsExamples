@@ -23,25 +23,35 @@ namespace LinkedList
                 data = d; 
             }
         }
-        public void deleteBackHalf()
+        public void DeleteTheKthNodeFromTheEndOfList(int kth)
         {
-            if(head==null || head.next == null )
+            if(head==null || kth == 0 )
             {
-                head = null;
+                return;
             }
-            Node slow = head;
-            Node fast = head;
-            Node prev = null;
+            Node first = head;
+            Node second = head;
             
-            while(fast != null && slow.next != null )
+            for(int i = 0; i < kth;i++)
             {
-                prev = slow;
-                slow = slow.next;
-                fast = fast.next.next;
-            
+                second = second.next;
+                if(second.next == null)
+                {
+                    if(i==kth-1)
+                    {
+                        head = head.next;
+                    }
+                }
+
+                return;
+
+
             }
-            prev.next = null;
+            
         }
+
+       
+
 
         public void displayContents()
         {

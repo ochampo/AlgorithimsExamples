@@ -16,11 +16,18 @@ namespace QueuesAndStacks
             queue.Enqueue(52);
             queue.Enqueue(35);
             queue.Enqueue(44);
-            queue.Enqueue(51);
-            queue.Enqueue(67);
+            
 
             int removedItem = queue.Dequeue();
             Console.WriteLine(removedItem);
+            
+            Console.WriteLine(queue.Dequeue());
+            Console.WriteLine(queue.Peek());
+            int current;
+            while(queue.TryDequeue(out current))
+            {
+                Console.WriteLine(current);
+            }
 
         }
 

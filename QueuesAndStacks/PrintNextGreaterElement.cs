@@ -30,13 +30,28 @@ namespace QueuesAndStacks
                     while (popped < next)
                     {
                         Console.WriteLine(popped + "---->" + next );
+                        if( stack.Count == 0)
+                        {
+                            break;
+                        }
                         popped = stack.Pop();
                      }
+
+                    if (popped > next)
+                    {
+                        stack.Push(popped);
+                    }
+
                 }
 
                 stack.Push(next);
             }
         
+
+            while(stack.Count > 0)
+            {
+                Console.WriteLine(stack.Pop() +"-->" + -1 );
+            }
         
         
         

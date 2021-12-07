@@ -22,7 +22,7 @@ namespace QueuesAndStacks
             for (int i = 1; i < arr.Length; i++)
             {
                 int next = arr[i];
-                stack.Push(arr[i]);
+                
                 if (stack.Count > 0)
                 {
                     int popped = stack.Pop();

@@ -28,3 +28,5 @@ CheckForOpenParentheses checkForOpenPar = new CheckForOpenParentheses();
 //PrintNextGreaterElement.NumbersChecker(arr4);
 
 Console.WriteLine(checkForOpenPar.Checker("(((Howdy)))"));
+Console.WriteLine(checkForOpenPar.Checker("(((Howdy)))))"));
+Console.WriteLine(checkForOpenPar.CheckerWithInt("(Howdy)"));

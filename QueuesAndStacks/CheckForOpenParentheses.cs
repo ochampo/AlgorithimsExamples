@@ -45,7 +45,7 @@ namespace QueuesAndStacks
 
         public Boolean CheckerWithInt(string s)
         {
-            Stack<char> stack = new Stack<char>();
+            int macthChecker = 0;
 
 
             for (int i = 0; i < s.Length; i++)
@@ -53,28 +53,29 @@ namespace QueuesAndStacks
                 char current = s[i];
                 if (current == '(')
                 {
-                    stack.Push(current);
+                    macthChecker++;
                     continue;
 
                 }
                 if (current == ')')
                 {
-
-                    if (stack.Count > 0)
+                    if (macthChecker > 0)
                     {
-                        stack.Pop();
+
+                        macthChecker--;
+
                     }
                     else
                     {
                         return false;
                     }
-
                 }
+                
 
 
 
             }
-            return stack.Count == 0;
+            return macthChecker == 0;
         }
 
 

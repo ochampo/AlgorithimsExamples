@@ -11,13 +11,14 @@ namespace hashBasedStructures
     {
         Dictionary<int, Employee> employeeById = new Dictionary<int, Employee>();
         
-        
-        public void searchForemployee( Employee employee)
+
+
+        public Dictionary<int, Employee> searchForemployee( Employee employee)
         {
-           
-           
 
             employeeById.Add(employee.id, employee);
+
+            return employeeById;
 
 
         }

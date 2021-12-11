@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using hashBasedStructures;
 using hashBasedStructures.Data;
+using System;
 
 Console.WriteLine("Hello, World!");
 
@@ -21,5 +22,12 @@ if(test.TryGetValue(1234, out e))
 {
     Console.WriteLine(e.name + " : " + e.department);
 }
+
+
+Findemployee.findMissingElements(new int[] { 1, 2,3,4,6,7,7,7,7 }, new int[] {1,2,3,4}).ForEach(Console.WriteLine);
+
+
+
+
 
 

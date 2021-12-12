@@ -8,7 +8,15 @@ namespace hashBasedStructures
 {
     public  class DisplayFrequency
     {
-        private DisplayFrequency();
+        static void Frequency(int[] arr)
+        {
+        for(int i =0; i < arr.Length; i++)
+            {
+                
+            }
+        
+        
+        } 
 
 
 

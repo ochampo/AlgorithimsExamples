@@ -8,7 +8,7 @@ namespace hashBasedStructures
 {
     public class DisplayFrequency
     {
-        static void frequency(int[] arr)
+      public  static void frequency(int[] arr)
         {
             Dictionary<int, int> freq = new Dictionary<int, int>();
 
@@ -27,11 +27,45 @@ namespace hashBasedStructures
 
             }
 
-            foreach (KeyValuePair<int,int> x in freq)
+            foreach (KeyValuePair<int, int> x in freq)
             {
-                Console.WriteLine(x.Key + " " + x.Value);
+                Console.WriteLine(x.Key + " ->" + x.Value);
             }
         }
+
+
+        public static void testingDictionaries(int[] arr)
+        {
+            Dictionary<int, int> freq = new Dictionary<int, int>();
+
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                freq[100] = 45;
+
+                Console.WriteLine(" i " + i);
+                if (freq.ContainsKey(arr[i]))
+                {
+                    Console.WriteLine(" arr[i] " + arr[i]);
+                    Console.WriteLine(" arr[i]++ " + freq[arr[i]]++);
+                    Console.WriteLine(freq[arr[i]]);
+                   
+                }
+                else
+                {
+                    //Console.WriteLine(freq[arr[i]]);
+                    freq[arr[i]] = 1;
+                }
+
+
+            }
+
+            foreach (KeyValuePair<int, int> x in freq)
+            {
+                Console.WriteLine(x.Key + " ->" + x.Value);
+            }
+        }
+
 
 
     }
@@ -41,4 +75,4 @@ namespace hashBasedStructures
 
 
 }
-}
+

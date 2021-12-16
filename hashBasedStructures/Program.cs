@@ -2,6 +2,7 @@
 using hashBasedStructures;
 using hashBasedStructures.Data;
 using System;
+using static hashBasedStructures.DetectACyclicLinkedList;
 
 Console.WriteLine("Hello, World!");
 
@@ -30,5 +31,25 @@ Findemployee find = new Findemployee();
 
 
 //DisplayFrequency.frequency(new int[] { 1,1,2,3,3,4,7,7,7,7 });
- DisplayFrequency.testingDictionaries(new int[] { 1, 1, 2, 3, 3, 4, 7, 7, 7, 7 });
+// DisplayFrequency.testingDictionaries(new int[] { 1, 1, 2, 3, 3, 4, 7, 7, 7, 7 });
 
+
+
+Node rootNode = new Node();
+rootNode.Data = 4;
+
+BinarySearchTree.Insert(rootNode, 2);
+BinarySearchTree.Insert(rootNode, 3);
+BinarySearchTree.Insert(rootNode, 5);
+BinarySearchTree.Insert(rootNode, 6);
+BinarySearchTree.Insert(rootNode, 4);
+
+
+NodeTest test = new NodeTest(0);
+
+
+test.AddToEnd(5);
+test.AddToEnd(4);
+test.AddToEnd(2);
+test.AddToEnd(51);
+test.print();

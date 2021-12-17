@@ -8,35 +8,26 @@ namespace hashBasedStructures
 {
     public class DetectACyclicLinkedList
     {
-       public class Node
+       public Node head;
+        public class Node
         {
-            public Node Left { get; set; }
-            public Node Right { get; set; }
-            public int Data { get; set; }
-        }
+            public int data;
+            public Node next;
 
-        public class BinarySearchTree
-        {
-            public static Node Insert(Node root, int value)
+            public Node(int d)
             {
-                if (root == null)
-                {
-                    root = new Node();
-                    root.Data = value;
-                }
-                else if (value < root.Data)
-                {
-                    root.Left = Insert(root.Left, value);
-                }
-                else if (value > root.Data)
-                {
-                    root.Right = Insert(root.Right, value);
-                }
-
-                return root;
+                data = d;
+                next = null;
             }
         }
 
+
+
+
+        public Boolean hasCycle()
+        {
+            return false;
+        }
 
     }
 }

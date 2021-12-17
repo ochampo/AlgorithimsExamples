@@ -35,21 +35,22 @@ Findemployee find = new Findemployee();
 
 
 
-Node rootNode = new Node();
-rootNode.Data = 4;
-
-BinarySearchTree.Insert(rootNode, 2);
-BinarySearchTree.Insert(rootNode, 3);
-BinarySearchTree.Insert(rootNode, 5);
-BinarySearchTree.Insert(rootNode, 6);
-BinarySearchTree.Insert(rootNode, 4);
 
 
-NodeTest test = new NodeTest(0);
 
 
-test.AddToEnd(5);
-test.AddToEnd(4);
-test.AddToEnd(2);
-test.AddToEnd(51);
-test.print();
+//NodeTest test = new NodeTest(0);
+
+
+//test.AddToEnd(5);
+//test.AddToEnd(4);
+//test.AddToEnd(2);
+//test.AddToEnd(51);
+//test.print();
+
+
+
+Node node = new Node(1);
+Node node1 = new Node(1);
+Node node2 = new Node(1);
+Node node3 = new Node(1);

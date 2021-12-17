@@ -54,3 +54,8 @@ Node node = new Node(1);
 Node node1 = new Node(1);
 Node node2 = new Node(1);
 Node node3 = new Node(1);
+
+DetectACyclicLinkedList detect = new DetectACyclicLinkedList();
+
+detect.head = node;
+node.next = node1;

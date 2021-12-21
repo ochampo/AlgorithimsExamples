@@ -49,13 +49,24 @@ Findemployee find = new Findemployee();
 //test.print();
 
 
-
-Node node = new Node(1);
-Node node1 = new Node(1);
-Node node2 = new Node(1);
-Node node3 = new Node(1);
-
 DetectACyclicLinkedList detect = new DetectACyclicLinkedList();
+Node node1 = new Node(3);
+Node node2 = new Node(4);
+Node node3 = new Node(5);
+Node node4 = new Node(6);
 
-detect.head = node;
-node.next = node1;
+
+
+detect.head = node1;
+node1.next = node2;
+node2.next = node3;
+node3.next = node4;
+
+
+Console.WriteLine(detect.hasCycle());
+
+DetectACyclicLinkedList detect2 = new DetectACyclicLinkedList();
+
+detect2.head = node1;
+node3.next = node2;
+Console.WriteLine(detect2.hasCycle());

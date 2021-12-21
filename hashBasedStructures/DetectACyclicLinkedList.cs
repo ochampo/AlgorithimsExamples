@@ -26,7 +26,24 @@ namespace hashBasedStructures
 
         public Boolean hasCycle()
         {
-            return false;
+            HashSet<Node> nodes = new HashSet<Node>();
+
+            Node current = head;
+            while (current != null)
+            {
+                if (nodes.Contains(current))
+                {
+                    return true;
+                }
+                else
+                {
+                    nodes.Add(current);
+                }
+
+                current = current.next;
+            }
+
+            return false; 
         }
 
     }

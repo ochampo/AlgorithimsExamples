@@ -14,6 +14,7 @@ namespace BinarySearchTrees
             {
                 root = new Node();
                 root.Data = value;
+                
             }
             else
             {
@@ -35,6 +36,19 @@ namespace BinarySearchTrees
             return root;
 
         }
-    
+
+       public static void preOrderTraversal(Node root)
+        {
+            if(root == null)
+            { return;}
+            preOrderTraversal(root.Left);
+            Console.WriteLine(root.Data + " " );
+            
+            preOrderTraversal(root.Right);
+
+        }
+
+
+
     }
 }

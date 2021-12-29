@@ -8,3 +8,4 @@ BSTExample.Insert(rootnode, 1);
 BSTExample.Insert(rootnode, 3);
 BSTExample.Insert(rootnode, 4);
 
+BSTExample.preOrderTraversal(rootnode);

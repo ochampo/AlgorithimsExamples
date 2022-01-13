@@ -39,6 +39,49 @@ namespace TortisandHareAlgorithm
 
         //}
 
+        public static bool FloydCycleDetection<T>(LinkedList<T> list)
+        {
+            var tortoise = list.First;
+            var hare = list.First;
+
+            while (tortoise != null && hare != null)
+            {
+                if (tortoise == hare)
+                {
+                    return true;
+                }
+                if (hare.Next != null)
+                {
+                    hare = hare.Next.Next;
+                }
+                tortoise = tortoise.Next;
+            }
+            return false;
+        }
+
+
+        public static bool HasCycle<T>(LinkedList<T> list)
+        {
+
+            if (list.First == null)
+                return false;
+
+            var slow = list.First;
+            var fast = list.First;
+
+            while (fast != null && fast.Next != null)
+            {
+                slow = slow.Next;
+                fast = fast.Next.Next;
+
+                if (slow == fast)
+                    return true;
+            }
+
+            return false;
+        }
+
+
 
 
     }

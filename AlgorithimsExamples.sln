@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueuesAndStacks", "QueuesAn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hashBasedStructures", "hashBasedStructures\hashBasedStructures.csproj", "{8069D73E-FECA-4888-B6C1-D751E7B67737}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTrees", "BinarySearchTrees\BinarySearchTrees.csproj", "{295C4106-0F43-4DCC-8200-62E8D0EBFB3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchTrees", "BinarySearchTrees\BinarySearchTrees.csproj", "{295C4106-0F43-4DCC-8200-62E8D0EBFB3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TortisandHareAlgorithm", "TortisandHareAlgorithm\TortisandHareAlgorithm.csproj", "{F5A334AE-7393-4DBC-BEF8-16F6412786B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{295C4106-0F43-4DCC-8200-62E8D0EBFB3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{295C4106-0F43-4DCC-8200-62E8D0EBFB3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{295C4106-0F43-4DCC-8200-62E8D0EBFB3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A334AE-7393-4DBC-BEF8-16F6412786B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A334AE-7393-4DBC-BEF8-16F6412786B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A334AE-7393-4DBC-BEF8-16F6412786B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A334AE-7393-4DBC-BEF8-16F6412786B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
